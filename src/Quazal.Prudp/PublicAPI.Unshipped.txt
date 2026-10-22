@@ -1,0 +1,21 @@
+#nullable enable
+Quazal.Prudp.PrudpConnection
+Quazal.Prudp.PrudpConnection.DisposeAsync() -> System.Threading.Tasks.ValueTask
+Quazal.Prudp.PrudpConnection.ReceiveAllAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Collections.Generic.IAsyncEnumerable<System.ReadOnlyMemory<byte>>!
+Quazal.Prudp.PrudpConnection.RemoteEndPoint.get -> System.Net.IPEndPoint!
+Quazal.Prudp.PrudpConnection.Send(System.ReadOnlySpan<byte> message) -> void
+Quazal.Prudp.PrudpListener
+Quazal.Prudp.PrudpListener.AcceptConnectionAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.ValueTask<Quazal.Prudp.PrudpConnection!>
+Quazal.Prudp.PrudpListener.DisposeAsync() -> System.Threading.Tasks.ValueTask
+Quazal.Prudp.PrudpListener.LocalEndPoint.get -> System.Net.IPEndPoint!
+Quazal.Prudp.PrudpListenerOptions
+Quazal.Prudp.PrudpListenerOptions.AccessKey.get -> string!
+Quazal.Prudp.PrudpListenerOptions.AccessKey.set -> void
+Quazal.Prudp.PrudpListenerOptions.ConnectCallback.get -> System.Func<Quazal.Prudp.PrudpConnection!, System.ReadOnlySpan<byte>, byte[]?>?
+Quazal.Prudp.PrudpListenerOptions.ConnectCallback.set -> void
+Quazal.Prudp.PrudpListenerOptions.ListenEndPoint.get -> System.Net.IPEndPoint!
+Quazal.Prudp.PrudpListenerOptions.ListenEndPoint.set -> void
+Quazal.Prudp.PrudpListenerOptions.PrudpListenerOptions() -> void
+Quazal.Prudp.PrudpListenerOptions.TimeProvider.get -> System.TimeProvider!
+Quazal.Prudp.PrudpListenerOptions.TimeProvider.set -> void
+static Quazal.Prudp.PrudpListener.ListenAsync(Quazal.Prudp.PrudpListenerOptions! options, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.ValueTask<Quazal.Prudp.PrudpListener!>
